@@ -19,6 +19,6 @@ You will need to download these files and extract them in `shp` directory on you
 
 * http://data.openstreetmapdata.com/simplified-land-polygons-complete-3857.zip
 * http://data.openstreetmapdata.com/land-polygons-split-3857.zip
-* http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-populated-places-simple.zip
+* http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip
 
 See extended setup instructions on [OSM Bright][].

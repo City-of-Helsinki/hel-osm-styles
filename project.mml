@@ -453,7 +453,15 @@
       "id": "ne_places",
       "name": "ne_places",
       "srs": "+proj=utm +zone=35 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
-      "srs-name": "autodetect"
+      "srs-name": "custom",
+      "extent": [
+        22.509647170604914,
+        -0.0008117456204300922,
+        22.51286321111978,
+        0.0007439497387585843
+      ],
+      "layer": null,
+      "advanced": {}
     },
     {
       "Datasource": {
