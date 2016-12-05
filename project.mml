@@ -444,7 +444,7 @@
       "Datasource": {
         "dbname": "osm",
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
-        "file": "/Users/tero.tikkanen/Projects/osm-bright/shp/ne_10m_populated_places/ne_10m_populated_places.shp",
+        "file": "shp/ne_10m_populated_places/ne_10m_populated_places.shp",
         "srs": "+proj=utm +zone=35 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
         "type": "shape"
       },
