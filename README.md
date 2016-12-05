@@ -1,6 +1,8 @@
 HEL Service Map Light
 ==========
 
+![screenshot](https://raw.githubusercontent.com/terotic/hel-service-map-light/master/screenshot.png)
+
 HEL Service Map Light is a map theme based on [OSM Bright][] and inspired by [Mapbox Light][]. 
 The theme is used to display overlay data in geographic context.
 
