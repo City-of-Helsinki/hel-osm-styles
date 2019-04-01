@@ -1860,7 +1860,8 @@
               ]
             ]
           ]
-        }
+        },
+        "line-translate-anchor": "viewport"
       }
     },
     {
@@ -1931,7 +1932,8 @@
               ]
             ]
           ]
-        }
+        },
+        "line-translate-anchor": "viewport"
       }
     },
     {
