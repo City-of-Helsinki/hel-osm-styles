@@ -4874,16 +4874,18 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color":[
-          [
-            15,
-            "rgba(230, 230, 230, 1)"
-          ],
-          [
-            16,
-            "rgba(153, 153, 153, 1)"
+        "fill-color": {
+            "stops": [
+            [
+              15,
+              "rgba(230, 230, 230, 1)"
+            ],
+            [
+              16,
+              "rgba(153, 153, 153, 1)"
+            ]
           ]
-        ],
+        },
         "fill-outline-color": "rgba(153, 153, 153, 1)",
         "fill-opacity": {
           "stops": [
