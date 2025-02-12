@@ -4,9 +4,8 @@
 
 FROM maptiler/tileserver-gl:v5.1.3
 
-COPY config.tar.gz .
+ADD config.tar.gz /data
 
-RUN tar xzf config.tar.gz && \
-    rm config.tar.gz
-
+# Setting group to 0 makes the environment similar to Openshift
+# wrt. filesystem permissions. Openshift runs everything with group 0
 USER node:0
