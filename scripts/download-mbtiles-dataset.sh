@@ -34,7 +34,7 @@ SHA256SUMS_URL="$OPENFREEMAP_URL/$SUBPATH/SHA256SUMS"
 # Download the latest MBTiles file
 DOWNLOAD_URL="$OPENFREEMAP_URL/$LATEST_FILE"
 echo "Downloading $LATEST_FILE from $DOWNLOAD_URL..."
-curl -s -o "$DOWNLOAD_DIR/tiles.mbtiles" "$DOWNLOAD_URL"
+curl -o "$DOWNLOAD_DIR/tiles.mbtiles" "$DOWNLOAD_URL"
 
 if [ $? -ne 0 ]; then
     echo "Error: Failed to download $LATEST_FILE."
