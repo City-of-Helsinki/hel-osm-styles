@@ -39,19 +39,18 @@ Based on CartoCSS theme style by Kalle Järvenpää.
 
 
 ## HEL Service Map Light
-==========
 
 ![screenshot](https://raw.githubusercontent.com/city-of-helsinki/hel-service-map-light/master/screenshot.png)
 
 HEL Service Map Light is a map theme based on [OSM Bright][] and inspired by [Mapbox Light][].
 The theme is used to display overlay data in geographic context.
 
-### Mapbox style
-------------
-
 MapBox port by Riku Oja.
 
 Based on CartoCSS theme style theme style by Tero Tikkanen.
 
-# high-contrast-map-layer
+## High contrast
+
+![screenshot](https://raw.githubusercontent.com/City-of-Turku/high-contrast-map-layer/refs/heads/master/screenshot-2.png)
+
 A high contrast map background layer
