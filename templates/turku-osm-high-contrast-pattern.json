@@ -8,7 +8,7 @@
       "url": "${SOURCES_OPENMAPTILES_URL}"
     }
   },
-  "sprite": "{styleJsonFolder}/../sprites/turku-osm-high-contrast-pattern/sprite",
+  "sprite": "turku-osm-high-contrast-pattern/sprite",
   "glyphs": "${GLYPHS_URL}",
   "layers": [
     {
