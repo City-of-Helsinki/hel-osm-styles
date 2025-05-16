@@ -22,7 +22,7 @@ for LOCALE in fi sv; do
     OUTPUT_FILE="$OUTPUT_DIR/${BASENAME}.${LOCALE}.json"
 
     # Substitute environment variables and write to output
-    envsubst < "$TEMPLATE" > "$OUTPUT_FILE"
+    envsubst '${LOCALE} ${SOURCES_OPENMAPTILES_URL} ${GLYPHS_URL}' < "$TEMPLATE" > "$OUTPUT_FILE"
     echo "  -> Generated ${OUTPUT_DIR}/${OUTPUT_FILE}"
   done
 done
