@@ -8,8 +8,8 @@
       "url": "${SOURCES_OPENMAPTILES_URL}"
     }
   },
-  "sprite": "{styleJsonFolder}/sprite",
-  "glyphs": "{fontstack}/{range}.pbf",
+  "sprite": "{styleJsonFolder}/../sprites/turku-osm-high-contrast-pattern/sprite",
+  "glyphs": "${GLYPHS_URL}",
   "layers": [
     {
       "id": "background",

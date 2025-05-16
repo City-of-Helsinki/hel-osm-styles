@@ -45,7 +45,7 @@
     }
   },
   "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
-  "glyphs": "https://tiles.hel.ninja/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "${GLYPHS_URL}",
   "layers": [
     {
       "id": "background",

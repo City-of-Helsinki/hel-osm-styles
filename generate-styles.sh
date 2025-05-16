@@ -4,6 +4,7 @@ set -euo pipefail
 
 # Verify env vars present
 : "${SOURCES_OPENMAPTILES_URL:?Environment variable missing}"
+: "${GLYPHS_URL:?Environment variable missing}"
 
 TEMPLATE_DIR="templates"
 OUTPUT_DIR="generated-styles"
