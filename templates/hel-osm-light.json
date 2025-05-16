@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "SERVICE MAP LIGHT based on OSM BRIGHT",
+  "name": "SERVICE MAP LIGHT based on OSM BRIGHT (${LOCALE})",
   "metadata": {
     "mapbox:type": "template",
     "mapbox:groups": {
@@ -5521,5 +5521,5 @@
       }
     }
   ],
-  "id": "osm-bright"
+  "id": "hel-osm-light-${LOCALE}"
 }

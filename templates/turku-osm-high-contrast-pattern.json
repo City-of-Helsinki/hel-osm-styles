@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "High Contrast Map",
+  "name": "High Contrast Map (${LOCALE})",
   "metadata": {},
   "sources": {
     "openmaptiles": {
@@ -840,5 +840,5 @@
       }
     }
   ],
-  "id": "turku-osm-high-contrast-pattern"
+  "id": "turku-osm-high-contrast-pattern-${LOCALE}"
 }
