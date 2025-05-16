@@ -41,7 +41,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://tiles.hel.ninja/data/helsinki.json"
+      "url": "${SOURCES_OPENMAPTILES_URL}"
     }
   },
   "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
@@ -3421,7 +3421,7 @@
       "layout": {
         "icon-image": "circle_stroked_11",
         "text-anchor": "top",
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light Italic"
         ],
@@ -4910,7 +4910,7 @@
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 350,
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light Italic"
         ],
@@ -4938,7 +4938,7 @@
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 350,
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -4975,7 +4975,7 @@
       "layout": {
         "symbol-placement": "point",
         "symbol-spacing": 350,
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Noto Sans Italic"
         ],
@@ -5012,7 +5012,7 @@
       "layout": {
         "symbol-placement": "point",
         "symbol-spacing": 350,
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light Italic"
         ],
@@ -5140,7 +5140,7 @@
       ],
       "layout": {
         "symbol-placement": "line",
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light"
         ],
@@ -5194,7 +5194,7 @@
       ],
       "layout": {
         "symbol-placement": "line",
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light"
         ],
@@ -5242,7 +5242,7 @@
       ],
       "layout": {
         "symbol-placement": "line",
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light"
         ],
@@ -5414,7 +5414,7 @@
       "layout": {
         "icon-image": "",
         "text-anchor": "top",
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light Italic"
         ],
@@ -5485,7 +5485,7 @@
       "layout": {
         "icon-image": "",
         "text-anchor": "top",
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light Italic"
         ],
@@ -5532,7 +5532,7 @@
       "layout": {
         "icon-image": "",
         "text-anchor": "top",
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light Italic"
         ],
@@ -5577,7 +5577,7 @@
       ],
       "layout": {
         "visibility": "visible",
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light Italic"
         ],
@@ -5618,7 +5618,7 @@
         ]
       ],
       "layout": {
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Light Italic"
         ],
@@ -5669,7 +5669,7 @@
         ]
       ],
       "layout": {
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato Regular"
         ],
@@ -5728,7 +5728,7 @@
         ]
       ],
       "layout": {
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": [
           "Lato SemiBold"
         ],

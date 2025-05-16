@@ -5,7 +5,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "mbtiles://helsinki.mbtiles"
+      "url": "${SOURCES_OPENMAPTILES_URL}"
     }
   },
   "sprite": "{styleJsonFolder}/sprite",
@@ -677,7 +677,7 @@
       "layout": {
         "icon-size": 1,
         "text-anchor": "top",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:${LOCALE}}\n{name:nonlatin}",
         "text-font": ["Lato Regular"],
         "text-max-width": 8,
         "text-offset": [0, 0.5],
@@ -701,7 +701,7 @@
       "layout": {
         "icon-size": 1,
         "text-anchor": "top",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:${LOCALE}}\n{name:nonlatin}",
         "text-font": ["Lato Regular"],
         "text-max-width": 8,
         "text-offset": [0, 0.5],
@@ -725,7 +725,7 @@
       "filter": ["==", "$type", "LineString"],
       "layout": {
         "symbol-placement": "line",
-        "text-field": "{name:latin} {name:nonlatin}",
+        "text-field": "{name:${LOCALE}} {name:nonlatin}",
         "text-font": ["Lato Bold"],
         "visibility": "visible",
         "text-transform": "none",
@@ -753,7 +753,7 @@
       ],
       "layout": {
         "text-anchor": "center",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:${LOCALE}}\n{name:nonlatin}",
         "text-font": ["Lato Regular"],
         "text-max-width": 6,
         "visibility": "visible",
@@ -775,7 +775,7 @@
       "maxzoom": 12,
       "filter": ["all", ["==", "$type", "Point"], ["==", "class", "city"]],
       "layout": {
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:${LOCALE}}\n{name:nonlatin}",
         "text-font": ["Lato Regular"],
         "text-max-width": 10,
         "text-size": {"stops": [[3, 20], [8, 35]]}
@@ -800,7 +800,7 @@
         ["!has", "iso_a2"]
       ],
       "layout": {
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": ["Lato Regular"],
         "text-max-width": 10,
         "text-size": {"stops": [[3, 12], [8, 22]]},
@@ -826,7 +826,7 @@
         ["has", "iso_a2"]
       ],
       "layout": {
-        "text-field": "{name:latin}",
+        "text-field": "{name:${LOCALE}}",
         "text-font": ["Lato Regular"],
         "text-max-width": 10,
         "text-size": {"stops": [[3, 12], [8, 22]]},
