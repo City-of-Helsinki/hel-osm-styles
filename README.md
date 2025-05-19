@@ -52,3 +52,6 @@ The theme is used to display overlay data in geographic context.
 MapBox port by Riku Oja.
 
 Based on CartoCSS theme style theme style by Tero Tikkanen.
+
+# high-contrast-map-layer
+A high contrast map background layer
