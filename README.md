@@ -1,18 +1,26 @@
 # Introduction
 
-Prebuild TileServer GL image with built-in Helsinki-spesific styles.
+Prebuild TileServer GL image with built-in Helsinki OSM styles.
 
-# Build and Test
+# Build and Test locally
+
+Modify Dockerfile to use the dockerhub image instead of platta image.
 
 Build:
 
 `docker build -t helsinki/tileserver-gl:latest .`
 
-Run:
+## Run with platta hosted mbtiles
+
+`docker run --rm -it -e SOURCES_OPENMAPTILES_URL=https://helsinki-maptiles.dev.hel.ninja/data/helsinki.json -p 8080:8080 helsinki/tileserver-gl:latest`
+
+## Run with local mbtiles
+
+If you have `/local/data/mbtiles/helsinki.mbtiles` then
 
 `docker run --rm -it -v /local/data/mbtiles:/data/mbtiles -p 8080:8080 helsinki/tileserver-gl:latest`
-This repository hosts various map styles used by Helsinki
 
+`SOURCES_OPENMAPTILES_URL` defaults to `mbtiles://helsinki.mbtiles`. Override as needed using `-e`
 
 
 ## Contributing

@@ -11,18 +11,28 @@ USER root:root
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
     apt-get install -y --no-install-recommends --no-install-suggests \
-      curl && \
+      curl gettext-base && \
     apt-get -y --purge autoremove && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*      
+    rm -rf /var/lib/apt/lists/*
+
+ENV SOURCES_OPENMAPTILES_URL "mbtiles://helsinki.mbtiles"
+ENV GLYPHS_URL "{fontstack}/{range}.pbf"
+
+RUN mkdir /generate-styles && chown node:0 /generate-styles
+ADD docker-entrypoint.sh /generate-styles
+ADD generate-styles.sh /generate-styles
+ADD templates /generate-styles/templates
+ADD fonts /data/fonts
+ADD mbtiles /data/mbtiles
+ADD sprites /data/sprites
+ADD config /data
+
 
 USER node:node
-
-ADD config.tar.gz /data
-
-# Copy the download script to the container
-ADD --chmod=755 scripts /scripts
 
 # Setting group to 0 makes the environment similar to Openshift
 # wrt. filesystem permissions. Openshift runs everything with group 0
 USER node:0
+
+ENTRYPOINT ["/generate-styles/docker-entrypoint.sh"]

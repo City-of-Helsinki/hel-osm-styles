@@ -1,0 +1,86 @@
+{
+  "options": {
+    "paths": {
+      "root": "/data",
+      "fonts": "fonts",
+      "styles": "generated-styles",
+      "sprites": "sprites",
+      "mbtiles": "/data/mbtiles"
+    },
+    "serveAllFonts": true,
+    "tileMargin": 128
+  },
+  "styles": {
+    "hel-osm-bright-fi": {
+      "style": "hel-osm-bright.fi.json",
+      "tilejson": {
+        "bounds": [
+          19.02427,
+          59.28783,
+          31.6159,
+          70.09959
+        ]
+      }
+    },
+    "hel-osm-bright-sv": {
+      "style": "hel-osm-bright.sv.json",
+      "tilejson": {
+        "bounds": [
+          19.02427,
+          59.28783,
+          31.6159,
+          70.09959
+        ]
+      }
+    },
+    "turku-osm-high-contrast-pattern-fi": {
+      "style": "turku-osm-high-contrast-pattern.fi.json",
+      "tilejson": {
+        "bounds": [
+          21,
+          59,
+          31,
+          63
+        ]
+      }
+    },
+    "turku-osm-high-contrast-pattern-sv": {
+      "style": "turku-osm-high-contrast-pattern.sv.json",
+      "tilejson": {
+        "bounds": [
+          21,
+          59,
+          31,
+          63
+        ]
+      }
+    },
+    "hel-osm-light-fi": {
+      "style": "hel-osm-light.fi.json",
+      "tilejson": {
+        "bounds": [
+          21,
+          59,
+          31,
+          63
+        ]
+      }
+    },
+    "hel-osm-light-sv": {
+      "style": "hel-osm-light.sv.json",
+      "tilejson": {
+        "bounds": [
+          21,
+          59,
+          31,
+          63
+        ]
+      }
+    }
+  },
+  "data": {
+    "helsinki": {
+      "mbtiles": "helsinki.mbtiles"
+    }
+  }
+}
