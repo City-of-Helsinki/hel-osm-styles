@@ -23,7 +23,7 @@ for LOCALE in fi sv; do
 
     # Substitute environment variables and write to output
     envsubst '${LOCALE} ${SOURCES_OPENMAPTILES_URL} ${GLYPHS_URL}' < "$TEMPLATE" > "$OUTPUT_FILE"
-    echo "  -> Generated ${OUTPUT_DIR}/${OUTPUT_FILE}"
+    echo "  -> Generated ${OUTPUT_FILE}"
   done
 done
 
