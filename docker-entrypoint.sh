@@ -1,7 +1,6 @@
 #!/bin/sh
-cd /generate-styles
-mkdir generated-styles
+cd /styles
 ./generate-styles.sh
-mv ./generated-styles /data/generated-styles
+chmod 550 generated-styles
 cd /data
 exec /usr/src/app/docker-entrypoint.sh
