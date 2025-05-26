@@ -19,7 +19,9 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 ENV SOURCES_OPENMAPTILES_URL="mbtiles://helsinki.mbtiles"
 ENV GLYPHS_URL="{fontstack}/{range}.pbf"
 
-RUN mkdir -p /styles/generated-styles && chown node:0 /styles/generated-styles
+RUN mkdir -p /styles/generated-styles && \
+    chown node:0 /styles/generated-styles && \
+    chmod 775 /styles/generated-styles
 ADD docker-entrypoint.sh /styles
 ADD generate-styles.sh /styles
 ADD templates /styles/templates
