@@ -10,18 +10,27 @@ Build:
 
 `docker build -t helsinki/tileserver-gl:latest .`
 
+## Generate styles
+
+```bash
+source .env-example
+./generate-styles.sh
+```
+
+
 ## Run with platta hosted mbtiles
 
-`docker run --rm -it -e SOURCES_OPENMAPTILES_URL=https://helsinki-maptiles.dev.hel.ninja/data/helsinki.json -p 8080:8080 helsinki/tileserver-gl:latest`
+```bash
+docker run --rm -it -v "./generated-styles:/data/generated-styles" -p 8080:8080 helsinki/tileserver-gl:latest
+```
 
 ## Run with local mbtiles
 
 If you have `/local/data/mbtiles/helsinki.mbtiles` then
 
-`docker run --rm -it -v /local/data/mbtiles:/data/mbtiles -p 8080:8080 helsinki/tileserver-gl:latest`
-
-`SOURCES_OPENMAPTILES_URL` defaults to `mbtiles://helsinki.mbtiles`. Override as needed using `-e`
-
+```bash
+docker run --rm -it -v "./generated-styles:/data/generated-styles" -v /local/data/mbtiles:/data/mbtiles -p 8080:8080 helsinki/tileserver-gl:latest
+```
 
 ## Contributing
 
