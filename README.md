@@ -4,8 +4,6 @@ Prebuild TileServer GL image with built-in Helsinki OSM styles.
 
 # Build and Test locally
 
-Modify Dockerfile to use the dockerhub image instead of platta image.
-
 Build:
 
 `docker build -t helsinki/tileserver-gl:latest .`
