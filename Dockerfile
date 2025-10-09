@@ -2,7 +2,7 @@
 # See README.md for build and running instructions
 
 ARG BUILDER_REGISTRY=docker.io
-FROM ${BUILDER_REGISTRY}/maptiler/tileserver-gl:v5.1.3
+FROM ${BUILDER_REGISTRY}/maptiler/tileserver-gl:v5.4.0
 USER root:root
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
