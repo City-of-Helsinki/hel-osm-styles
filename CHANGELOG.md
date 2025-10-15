@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/City-of-Helsinki/hel-osm-styles/compare/hel-osm-styles-v1.0.0...hel-osm-styles-v1.0.1) (2025-10-15)
+
+
+### Dependencies
+
+* Bump tileserver-gl 5.1.3 -&gt; 5.4.0 ([ae98df4](https://github.com/City-of-Helsinki/hel-osm-styles/commit/ae98df47466de4b87049b8df34d88faac54fd25a))
+
 ## [1.0.0](https://github.com/City-of-Helsinki/hel-osm-styles/compare/hel-osm-styles-v0.0.2...hel-osm-styles-v1.0.0) (2025-05-27)
 
 
