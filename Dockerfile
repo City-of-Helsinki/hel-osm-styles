@@ -17,12 +17,12 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 ENV SOURCES_OPENMAPTILES_URL="mbtiles://helsinki.mbtiles"
 ENV GLYPHS_URL="{fontstack}/{range}.pbf"
 
-ADD generate-styles.sh /styles/
-ADD templates /styles/templates
-ADD fonts /data/fonts
-ADD mbtiles /data/mbtiles
-ADD sprites /data/sprites
-ADD config /data
+COPY generate-styles.sh /styles/
+COPY templates /styles/templates
+COPY fonts /data/fonts
+COPY mbtiles /data/mbtiles
+COPY sprites /data/sprites
+COPY config /data
 
 
 USER node:node
